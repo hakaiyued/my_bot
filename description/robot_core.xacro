@@ -53,6 +53,10 @@
         </inertial>
     </link>
 
+    <gazebo reference="chassis">
+        <material>Gazebo/White</material>
+    </gazebo>
+
     <!-- WHEEL LINK -->
 
     <joint name="left_wheel_joint" type="continuous">
@@ -81,6 +85,10 @@
         </inertial>
     </link>
 
+    <gazebo reference="left_wheel">
+        <material>Gazebo/Blue</material>
+    </gazebo>
+
     <joint name="right_wheel_joint" type="continuous">
         <parent link="base_link" />
         <child link="right_wheel" />
@@ -106,6 +114,10 @@
             <inertia ixx="0.00114" ixy="0" ixz="0" iyy="0.00114" iyz="0" izz="0.00188"/>
         </inertial>
     </link>
+
+    <gazebo reference="right_wheel">
+        <material>Gazebo/Blue</material>
+    </gazebo>
 
     <!-- CASTER WHEEL LINK -->
 
@@ -134,6 +146,12 @@
         </inertial>
     </link>
 
+    <gazebo reference="front_caster_wheel">
+        <material>Gazebo/Black</material>
+        <mu1>0.001</mu1>
+        <mu2>0.001</mu2>
+    </gazebo>
+
     <joint name="rear_caster_wheel_joint" type="fixed">
         <parent link="chassis" />
         <child link="rear_caster_wheel" />
@@ -158,5 +176,11 @@
             <inertia ixx="0.15" ixy="0" ixz="0" iyy="0.15" iyz="0" izz="0.15"/>
         </inertial>
     </link>
+
+    <gazebo reference="rear_caster_wheel">
+        <material>Gazebo/Black</material>
+        <mu1>0.001</mu1>
+        <mu2>0.001</mu2>
+    </gazebo>
 
 </robot>
