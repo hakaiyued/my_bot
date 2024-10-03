@@ -1,4 +1,5 @@
 /home/kyle/workspaces/my_bot/install/my_bot/share/my_bot/config/empty.yaml
+/home/kyle/workspaces/my_bot/install/my_bot/share/my_bot/description/camera.xacro
 /home/kyle/workspaces/my_bot/install/my_bot/share/my_bot/description/gazebo_control.xacro
 /home/kyle/workspaces/my_bot/install/my_bot/share/my_bot/description/lidar.xacro
 /home/kyle/workspaces/my_bot/install/my_bot/share/my_bot/description/robot.urdf.xacro
